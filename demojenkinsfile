@@ -1,0 +1,21 @@
+pipeline {
+    agent any // Use any available agent
+
+    stages {
+        stage('Hello Stage 1') { // First stage
+            steps {
+                echo 'Hello, World!' // Message for Stage 1
+            }
+        }
+        stage('Hello Stage 2') { // Second stage
+            steps {
+                echo 'Hello, World 2!' // Message for Stage 2
+            }
+        }
+        stage('Hello Stage 3') { // Third stage
+            steps {
+                echo 'Hello, World 3!' // Message for Stage 3
+            }
+        }
+    }
+}
